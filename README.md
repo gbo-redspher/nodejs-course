@@ -6,7 +6,12 @@ nodejs basic course to startup a project
 
 - ```PORT``` port number of the app
 
-## CURL
+## Docker
+
+- `docker build -t test-course .`
+- `docker run -p 5000:5000 test-course`
+
+## Curl
 
 - Create a message with:
   - `curl -X POST -H "Content-Type:application/json" http://localhost:5000/messages -d '{"text":"We need a new plague."}'`
