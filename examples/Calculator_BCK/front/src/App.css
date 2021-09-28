@@ -1,0 +1,32 @@
+.calculator {
+  background-color: #323433;
+  border: 1px solid #c6c6c6;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  min-width: 320px;
+  min-height: 465px;
+  max-width: 414px;
+  max-height: 823px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  background-color: rgb(57, 58, 57);
+  position: fixed;
+  width: auto;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+  /* background-color: #fff; */
+  padding: 0.25rem;
+  margin: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  justify-content: space-around;
+  z-index: 100;
+}
