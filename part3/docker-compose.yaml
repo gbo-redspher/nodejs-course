@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+
+  back:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ts-course
+    networks:
+      pvtHub:
+        ipv4_address: 172.168.1.2
+    volumes:
+      - ./src:/app/src
+      - /app/node_modules
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+
+networks:
+  pvtHub:
+    ipam:
+      config:
+        - subnet: 172.168.1.0/24
+          gateway: 172.168.1.1
